@@ -1,0 +1,47 @@
+<%- include('./base/header.ejs') %>
+<div class="container">
+    <div class="alert bg-success my-3">
+        <h4 class="text-center" style="color: white;">Add New student</h4>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <form action='/add/student' method="post">
+                <div>
+                    <label for="" class="form-label">Roll No <span style="color: red;">*</span></label>
+                    <input type="text" name="rollNo" required="" placeholder="Enter Your RollNo" class="form-control">
+                </div>
+                <div>
+                    <label for="" class="form-label">First Name <span style="color: red;">*</span></label>
+                    <input type="text" name="firstName" required="" placeholder="Enter Your FirstName"
+                        class="form-control">
+                </div>
+                <div>
+                    <label for="" class="form-label">Last Name <span style="color: red;">*</span></label>
+                    <input type="text" name="lastName" required="" placeholder="Enter Your LastName"
+                        class="form-control">
+                </div>
+                <div>
+                    <label for="" class="form-label">Father Name <span style="color: red;">*</span></label>
+                    <input type="text" name="fatherName" required="" placeholder="Enter Your FatherName"
+                        class="form-control">
+                </div>
+                <div>
+                    <label for="" class="form-label">Aadhar Card Number <span style="color: red;">*</span></label>
+                    <input type="text" name="adharCardNo" required="" placeholder="Enter Your AadharNo"
+                        class="form-control">
+                </div>
+                <div>
+                    <label for="" class="form-label">Mobile No <span style="color: red;">*</span></label>
+                    <input type="text" name="mobileNo" required="" placeholder="Enter Your MobileNo"
+                        class="form-control">
+                </div>
+                <input type="Submit" value="Add student" class="btn btn-warning my-3 w-100">
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+<%- include('./base/footer.ejs') %>
