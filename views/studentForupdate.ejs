@@ -1,0 +1,48 @@
+<%- include('./base/header.ejs') %>
+<div class="container">
+    <div class="alert bg-success my-3">
+        <h4 class="text-center" style="color: white;">Update Student</h4>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <form action='/update/student/<%= student._id %>' method="post">
+                <div>
+                    <label for="" class="form-label">Roll No <span style="color: red;">*</span></label>
+                    <input type="text" name="rollNo" value="<%= student.rollNo %>" placeholder="Enter Your RollNo"
+                        class="form-control">
+                </div>
+                <div>
+                    <label for="" class="form-label">First Name <span style="color: red;">*</span></label>
+                    <input type="text" name="firstName" value="<%= student.firstName %>" required=""
+                        placeholder="Enter Your FirstName" class="form-control">
+                </div>
+                <div>
+                    <label for="" class="form-label">Last Name <span style="color: red;">*</span></label>
+                    <input type="text" name="lastName" value="<%= student.lastName %>" required=""
+                        placeholder="Enter Your LastName" class="form-control">
+                </div>
+                <div>
+                    <label for="" class="form-label">Father Name <span style="color: red;">*</span></label>
+                    <input type="text" name="fatherName" value="<%= student.fatherName %>" required=""
+                        placeholder="Enter Your FatherName" class="form-control">
+                </div>
+                <div>
+                    <label for="" class="form-label">Aadhar Card Number <span style="color: red;">*</span></label>
+                    <input type="text" name="adharCardNo" value="<%= student.adharCardNo %>" required=""
+                        placeholder="Enter Your AadharNo" class="form-control">
+                </div>
+                <div>
+                    <label for="" class="form-label">Mobile No <span style="color: red;">*</span></label>
+                    <input type="text" name="mobileNo" value="<%= student.mobileNo %>" required=""
+                        placeholder="Enter Your MobileNo" class="form-control">
+                </div>
+                <input type="Submit" value="Update student" class="btn btn-warning my-3 w-100">
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+<%- include('./base/footer.ejs') %>
